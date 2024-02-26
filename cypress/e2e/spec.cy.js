@@ -50,4 +50,8 @@ describe('test formulir', () => {
     fPage.answer5()
     fPage.buttonSubmit()
   })
+  it('submit without input require answer', () => {
+    
+    fPage.alertRequireField()
+  })
 })

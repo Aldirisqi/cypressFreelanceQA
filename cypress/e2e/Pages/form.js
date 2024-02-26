@@ -72,5 +72,11 @@ export class formPage{
         cy.xpath('/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/span[1]')
         .should("have.text", "Your response has been successfully recorded.");
     }
+    submitWithoutRequireField(){
+        cy.xpath('/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[3]/div[1]/button[1]')
+        .click();
+        cy.xpath('/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[4]/span[2]')
+        .should("have.text", "5 question(s) need to be completed before submitting: Question 1,Question 2,Question 3,Question 4,Question 5.");
+    }
     
 }
