@@ -52,6 +52,6 @@ describe('test formulir', () => {
   })
   it('submit without input require answer', () => {
     
-    fPage.alertRequireField()
+    fPage.submitWithoutRequireField()
   })
 })
